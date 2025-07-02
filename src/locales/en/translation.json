@@ -1,0 +1,80 @@
+{
+  "welcome_title": "You Are Navigating Unregistered",
+  "welcome_subtitle": "Explore services and stay updated with the latest posts.",
+  "register": "Register",
+  "search_placeholder": "Search for services...",
+  "search_button": "Search",
+  "available_services": "Available Services",
+  "view_providers": "View Providers",
+  "news_feed": "News Feed",
+  "like": "Like",
+  "comment": "Comment",
+
+  "register_step1": {
+    "title": "Create Your Profile",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "alert": "Please enter both first and last name"
+  },
+  "next": "Next",
+  "register_step2": {
+    "title": "Your Contact",
+    "email": {
+      "label_provider": "Email (required)",
+      "label_seeker": "Email (optional)"
+    },
+    "phone": {
+      "label_provider": "Phone (optional)",
+      "label_seeker": "Phone Number (required)"
+    },
+    "alert": {
+      "provider": "Email is required for providers",
+      "seeker": "Phone is required for seekers"
+    }
+  },
+ 
+"register_step3": {
+  "title": "Select Your Location",
+  "select_country": "Select Country",
+  "select_state": "Select State",
+  "alert": "Please select both country and state"
+ },
+"register_step4": {
+  "title": "What are you looking for?",
+  "provider": "I am a service provider",
+  "seeker": "I need a service",
+  "alert": "Please select your role",
+  "finish_message": "Thank you! Your profile info has been saved.", 
+  "back": "← Back"
+ },
+  "services": {
+    "plumbing": {
+      "name": "Plumbing",
+      "desc": "Professional plumbing services available 24/7."
+    },
+    "electrician": {
+      "name": "Electrician",
+      "desc": "Expert electricians ready for repairs and installations."
+    },
+    "cleaning": {
+      "name": "Cleaning",
+      "desc": "Home and office cleaning services tailored to your needs."
+    },
+    "tutoring": {
+      "name": "Tutoring",
+      "desc": "Private tutoring for students in various subjects."
+    },
+    "painting": {
+      "name": "Painting",
+      "desc": "Residential and commercial painting services."
+    },
+    "landscaping": {
+      "name": "Landscaping",
+      "desc": "Beautify your garden with professional landscaping services."
+    }
+  },
+    "map": {
+    "providers": "Providers"
+  }
+
+}

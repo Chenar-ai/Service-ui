@@ -1,0 +1,82 @@
+{
+  "welcome_title": "Anda Sedang Melayari Tanpa Pendaftaran",
+  "welcome_subtitle": "Terokai perkhidmatan dan dapatkan kemas kini terkini.",
+  "register": "Daftar",
+  "search_placeholder": "Cari perkhidmatan...",
+  "search_button": "Cari",
+  "available_services": "Perkhidmatan Tersedia",
+  "view_providers": "Lihat Penyedia",
+  "news_feed": "Siaran Terkini",
+  "like": "Suka",
+  "comment": "Komen",
+
+  "register_step1": {
+    "title": "Cipta Profil Anda",
+    "first_name": "Nama Pertama",
+    "last_name": "Nama Akhir",
+    "alert": "Sila masukkan nama pertama dan nama akhir"
+  },
+  "next": "Seterusnya",
+  "register_step2": {
+    "title": "Maklumat Perhubungan Anda",
+    "email": {
+      "label_provider": "E-mel (wajib)",
+      "label_seeker": "E-mel (pilihan)"
+    },
+    "phone": {
+      "label_provider": "Telefon (pilihan)",
+      "label_seeker": "Nombor Telefon (wajib)"
+    },
+    "alert": {
+      "provider": "E-mel diperlukan untuk penyedia perkhidmatan",
+      "seeker": "Nombor telefon diperlukan untuk pengguna"
+    }
+  },
+
+  
+  "register_step3": {
+    "title": "Pilih Lokasi Anda",
+    "select_country": "Pilih Negara",
+    "select_state": "Pilih Negeri",
+    "alert": "Sila pilih negara dan negeri"
+  },
+  "register_step4": {
+    "title": "Apakah yang anda cari?",
+    "provider": "Saya penyedia perkhidmatan",
+    "seeker": "Saya perlukan perkhidmatan",
+    "alert": "Sila pilih peranan anda",
+    "finish_message": "Terima kasih! Maklumat profil anda telah disimpan.",
+    "back": "← Balek"
+  },
+    "services": {
+    "plumbing": {
+      "name": "Paip",
+      "desc": "Perkhidmatan paip profesional tersedia 24/7."
+    },
+    "electrician": {
+      "name": "Juruteknik Elektrik",
+      "desc": "Juruteknik elektrik pakar untuk pembaikan dan pemasangan."
+    },
+    "cleaning": {
+      "name": "Pembersihan",
+      "desc": "Perkhidmatan pembersihan rumah dan pejabat mengikut keperluan anda."
+    },
+    "tutoring": {
+      "name": "Tuisyen",
+      "desc": "Tuisyen peribadi untuk pelajar dalam pelbagai subjek."
+    },
+    "painting": {
+      "name": "Pengecatan",
+      "desc": "Perkhidmatan pengecatan kediaman dan komersial."
+    },
+    "landscaping": {
+      "name": "Landskap",
+      "desc": "Cantikkan taman anda dengan perkhidmatan landskap profesional."
+    }
+      
+  },
+  "map": {
+      "providers": "Penyedia"
+    }
+
+}
