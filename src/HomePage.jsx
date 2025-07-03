@@ -24,13 +24,19 @@ function HomePage() {
           </button>
         </div>
         <h1 className="text-3xl font-bold">{t("welcome_title")}</h1>
-        <p className="mt-2 text-lg">{t("welcome_subtitle")}</p>
+        <p className="mt-2 text-sm sm:text-base md:text-lg max-w-xs mx-auto px-2">
+        {t("welcome_subtitle")}
+      </p>
+
       </header>
 
       {/* Profile */}
       <section className="bg-white p-4 shadow-md">
         <div className="flex items-center justify-between">
-          <Link to="/register" className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+          <Link
+            to="/register"
+            className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 transition"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6 text-gray-600"
@@ -54,10 +60,9 @@ function HomePage() {
         </div>
       </section>
 
-
       {/* Search */}
-      <div className="flex justify-center mt-6">
-        <div className="flex w-full sm:w-1/2 md:w-1/3">
+      <div className="flex justify-center mt-6 px-4">
+        <div className="flex w-full sm:w-3/4 md:w-1/2 lg:w-1/3">
           <input
             type="text"
             placeholder={t("search_placeholder")}
@@ -70,36 +75,30 @@ function HomePage() {
       </div>
 
       {/* Services */}
-      <section className="bg-white p-6 rounded-lg shadow-md mt-6">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+      <section className="bg-white p-4 rounded-lg shadow-md mt-6 mx-4">
+        <h2 className="text-xl font-semibold text-gray-700 mb-4 text-center">
           {t("available_services")}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-3 gap-3">
           {services.map((service) => (
-            <div
+            <Link
               key={service.id}
-              className="bg-blue-50 p-6 rounded-lg shadow-sm hover:bg-blue-100 transition"
+              to={`/map/${service.id}`}
+              className="flex flex-col items-center justify-center bg-blue-100 hover:bg-blue-200 transition rounded-lg p-3 text-center"
             >
-              <div className="flex items-center space-x-4">
-                <span className="text-4xl">{service.icon}</span>
-                <div>
-                  <h3>{t(service.nameKey)}</h3>
-                  <p>{t(service.descKey)}</p>
-                </div>
+              <div className="text-3xl text-blue-600">{service.icon}</div>
+              <div className="mt-2 text-xs font-medium text-gray-800">
+                {t(service.nameKey)}
               </div>
-              <Link
-                to={`/map/${service.id}`}
-                className="mt-4 inline-block text-blue-500 hover:underline"
-              >
-                {t("view_providers")}
-              </Link>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
+
       {/* News Feed */}
-      <section className="bg-white p-6 rounded-lg shadow-md mt-6">
+      <section className="bg-white p-4 sm:p-6 rounded-lg shadow-md mt-6 mx-4 mb-8">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
           {t("news_feed")}
         </h2>
@@ -112,7 +111,9 @@ function HomePage() {
               </div>
               <p className="text-gray-700 mt-2">{post.content}</p>
               <div className="flex items-center justify-between mt-2">
-                <button className="text-blue-500">{t("like")} ({post.likes})</button>
+                <button className="text-blue-500">
+                  {t("like")} ({post.likes})
+                </button>
                 <button className="text-blue-500">{t("comment")}</button>
               </div>
             </div>

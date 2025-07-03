@@ -24,7 +24,7 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route
-          path="/"
+          path="/register/"
           element={
             <div className="min-h-screen">
               <HomePage />
@@ -82,7 +82,7 @@ const PageWrapper = ({ children }) => (
     initial={{ x: 100, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
     exit={{ x: -100, opacity: 0 }}
-    transition={{ duration: 0.25, ease: "easeInOut" }}
+    transition={{ duration: 0.15, ease: "easeInOut" }}
     className="min-h-screen"
   >
     {children}
